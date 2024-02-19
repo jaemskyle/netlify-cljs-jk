@@ -2,7 +2,7 @@
                
 (defn init []
   (let [dump-el (js/document.getElementById "dump")]
-    (js/console.log "init" dump-el)
+    (js/console.log "init" dump-el "testing deploy")
     (-> (js/fetch "/.netlify/functions/api")
         (.then (fn [res]
                  (.text res)))
